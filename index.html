@@ -20,8 +20,8 @@
 </head>
 <body class="font-raleway h-screen b-full flex flex-col items-center justify-center bg-[url('/images/bg-mobile.png')] md:bg-[url('/images/bg-desktop.png')] bg-no-repeat bg-cover">
 
-  <main class="w-full h-full m-auto flex-1 flex flex-col justify-center items-center">
-    <section class="flex flex-col bg-[hsl(228,56%,26%)] w-4/5 p-10 gap-10 rounded-tr-[100px]">
+  <main class="w-full h-full m-auto flex-1 flex flex-col gap-5 justify-center items-center">
+    <section class="flex flex-col bg-[hsl(228,56%,26%)] w-4/5 p-10 gap-10 rounded-tl-xl rounded-tr-[100px] rounded-bl-xl rounded-br-xl">
       <div>
         <img src="images/logo.svg" alt="logo">
       </div>
@@ -38,21 +38,33 @@
       </div>
     </section>
 
-    <section class="text-white">
-      <p>
-        You’ve used 815 GB of your storage
+    <section class="text-[hsl(243,100%,93%)] flex flex-col bg-[hsl(228,56%,26%)] w-4/5 px-10 py-14 rounded-xl relative">
+      <p class="mb-4 text-center">
+        You’ve used <span class="text-white font-medium">815 GB</span> of your storage
       </p>
-    
-      <div>
-        185 GB Left
+      <div class="w-full h-5 p-1 bg-[hsl(229,57%,11%)] rounded-xl">
+        <div class="w-4/5 h-full p-1 bg-gradient-to-r from-[hsl(6,100%,80%)] to-[hsl(335,100%,65%)] rounded-xl relative">
+          <div class="w-[10px] h-[10px] rounded-full bg-white absolute right-[2px] top-[1px]"></div>
+        </div>
       </div>
-      
-      <span>
-        0 GB
-      </span>
-      <span>
-        1000 GB
-      </span>
+    
+      <div class="absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 bg-white flex items-center gap-2 py-4 px-5 rounded-xl">
+        <span class="text-[hsl(229,57%,11%)] font-bold text-5xl">
+          185
+        </span> 
+        <span class="text-[hsl(229,7%,55%)] uppercase font-bold text-sm">
+          GB Left
+        </span>
+      </div>
+
+      <div class="flex justify-between font-medium text-white text-sm mt-3">
+        <span>
+          0 GB
+        </span>
+        <span>
+          1000 GB
+        </span>
+      </div>
 
     </section>
   </main>
