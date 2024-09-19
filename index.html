@@ -18,19 +18,27 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="font-raleway h-screen b-full flex flex-col justify-center">
+<body class="font-raleway h-screen b-full flex flex-col items-center justify-center bg-[url('/images/bg-mobile.png')] md:bg-[url('/images/bg-desktop.png')] bg-no-repeat bg-cover">
 
-  <main class="h-full m-auto flex-1 border">
-    <section>
-      <img src="images/logo.svg" alt="logo">
+  <main class="w-full h-full m-auto flex-1 flex flex-col justify-center items-center">
+    <section class="flex flex-col bg-[hsl(228,56%,26%)] w-4/5 p-10 gap-10 rounded-tr-[100px]">
       <div>
-        <img src="images/icon-document.svg" alt="document icon">
-        <img src="images/icon-folder.svg" alt="">
-        <img src="images/icon-upload.svg" alt="upload icon">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="flex justify-between w-4/5">
+        <span class="flex bg-[hsl(229,57%,11%)] w-12 h-12 rounded-xl">
+          <img class="m-auto" src="images/icon-document.svg" alt="document icon">
+        </span>
+        <span class="flex bg-[hsl(229,57%,11%)] w-12 h-12 rounded-xl">
+          <img class="m-auto" src="images/icon-folder.svg" alt="">
+        </span>
+        <span class="flex bg-[hsl(229,57%,11%)] w-12 h-12 rounded-xl">
+          <img class="m-auto" src="images/icon-upload.svg" alt="upload icon">
+        </span>
       </div>
     </section>
 
-    <section>
+    <section class="text-white">
       <p>
         You’ve used 815 GB of your storage
       </p>
