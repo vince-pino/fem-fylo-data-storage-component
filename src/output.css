@@ -847,6 +847,10 @@ video {
   background-image: url('images/bg-mobile.png');
 }
 
+.bg-\[url\(\'\.\.\/images\/bg-mobile\.png\'\)\] {
+  background-image: url('../images/bg-mobile.png');
+}
+
 .from-\[hsl\(6\2c 100\%\2c 80\%\)\] {
   --tw-gradient-from: hsl(6,100%,80%) var(--tw-gradient-from-position);
   --tw-gradient-to: hsl(6 100% 80% / 0) var(--tw-gradient-to-position);
@@ -1232,6 +1236,10 @@ video {
 
   .md\:bg-\[url\(\'images\/bg-desktop\.png\'\)\] {
     background-image: url('images/bg-desktop.png');
+  }
+
+  .md\:bg-\[url\(\'\.\.\/images\/bg-desktop\.png\'\)\] {
+    background-image: url('../images/bg-desktop.png');
   }
 
   .md\:bg-contain {
